@@ -1,10 +1,10 @@
 OLDIFS=$IFS
 IFS=:
 
+# Search PATH for an executable "ac" that is installed via homebrew
 for dir in $PATH; do
   if [[ -d "$dir" && -x "$dir/ac" ]]; then
-    echo "$dir" | grep -q "homebrew"
-    if [ $? -eq 0 ]; then
+    if echo "$dir" | grep -q "homebrew"; then
       DIR="$dir"
       AC_PATH="$dir/ac"
       break
