@@ -24,10 +24,11 @@ aif: $(TARGET).aif
 
 disk: $(TARGET).dsk
 
-dir: $(SRC_DIR) $(BIN_DIR) $(OBJ_DIR)
-
 init:
 	bash scripts/init.bash
+
+uninstall:
+	bash scripts/uninstall.bash
 
 SOURCES:=$(wildcard $(SRC_DIR)/*.c)
 OBJECTS=$(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
@@ -62,4 +63,4 @@ clean:
 	@[ -n "${BIN_DIR}" ] || { echo "BIN_DIR unset or null"; exit 127; }
 	rm -rf $(BIN_DIR) $(OBJ_DIR)
 
-.PHONY: all target wav aif disk clean dir
+.PHONY: all target wav aif disk clean dir init uninstall

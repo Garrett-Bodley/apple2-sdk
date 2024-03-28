@@ -24,11 +24,21 @@ There is no `make` command as it should only be run on MacOS systems.
 bash scripts/rename-ac.bash
 ```
 
+## Uninstall
+
+`scripts/uninstall.bash` uninstalls the homebrew packages (and deletes the renamed symlink if it exists). You can call it directly or via `make`
+
+```
+bash scripts/uninstall.bash
+
+# or
+
+make uninstall
+```
+
 ## Make Commands
 
 ```
-# Stub out project directories
-make dir
 
 # Compile to 6502
 make target
