@@ -24,8 +24,8 @@ aif: $(TARGET).aif
 
 disk: $(TARGET).dsk
 
-init:
-	scripts/init
+install:
+	scripts/install
 
 uninstall:
 	scripts/uninstall
