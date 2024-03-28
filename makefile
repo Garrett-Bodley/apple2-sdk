@@ -34,11 +34,11 @@ SOURCES:=$(wildcard $(SRC_DIR)/*.c)
 OBJECTS=$(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 # Rule to make object files
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | dir
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 # Rule to make target
-$(TARGET): $(OBJECTS) | dir
+$(TARGET): $(OBJECTS) | $(BIN_DIR)
 	$(CC) $(CFLAGS) -o $@ $^
 
 # Generate .wav file using c2t
