@@ -14,6 +14,13 @@ This should help you get set up for developing on the Apple ][
 make install
 ```
 
+**Virtual ][**
+
+This app requires a ROM image, which must be downloaded and installed
+separately.
+
+See https://virtualii.com/VirtualIIHelp/virtual_II_help.html#ROMImage
+
 **For MacOS only**
 
 MacOS has a command called `ac`, but the command line version of AppleCommander installed via homebrew aliases itself as `ac`. This script should find and rename the alias of the homebrew installation to `aplc`.
