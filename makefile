@@ -37,12 +37,15 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | dir
 $(TARGET): $(OBJECTS) | dir
 	$(CC) $(CFLAGS) -o $@ $^
 
+# Generate .wav file using c2t
 $(TARGET).wav: $(TARGET)
 	$(C2T) -bc8 $(TARGET),$(START_ADDRESS) $(TARGET).wav
 
+# Generate .aif file using c2t
 $(TARGET).aif: $(TARGET)
 	$(C2T) -bc8 $(TARGET),$(START_ADDRESS) $(TARGET).aif
 
+# Generate disk image using AppleCommander
 $(TARGET).dsk: $(TARGET)
 	cp $(DISK_IMAGE) $(TARGET).dsk
 	aplc -p $(TARGET).dsk main.system sys 0x$(START_ADDRESS) < $(TARGET)
