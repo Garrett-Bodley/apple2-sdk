@@ -26,6 +26,9 @@ disk: $(TARGET).dsk
 
 dir: $(SRC_DIR) $(BIN_DIR) $(OBJ_DIR)
 
+init:
+	bash scripts/init.bash
+
 SOURCES:=$(wildcard $(SRC_DIR)/*.c)
 OBJECTS=$(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
