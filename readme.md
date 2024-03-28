@@ -10,7 +10,7 @@ This should help you get set up for developing on the Apple ][
 bash scripts/init.bash
 ```
 
-**For MacOS users only**
+**For MacOS only**
 
 MacOS has a command called `ac`, but the command line version of AppleCommander installed via homebrew aliases itself as `ac`. This script should find and rename the alias of the homebrew installation
 
