@@ -25,10 +25,10 @@ aif: $(TARGET).aif
 disk: $(TARGET).dsk
 
 init:
-	bash scripts/init.bash
+	scripts/init
 
 uninstall:
-	bash scripts/uninstall.bash
+	scripts/uninstall
 
 SOURCES:=$(wildcard $(SRC_DIR)/*.c)
 OBJECTS=$(SOURCES:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)

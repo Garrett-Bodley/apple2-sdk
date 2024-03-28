@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 AC_PATH="$(brew --prefix)/bin/ac"
 
 if test -z "$AC_PATH" ; then

@@ -4,10 +4,10 @@ This should help you get set up for developing on the Apple ][
 
 ## Installation
 
-`scripts/init.bash` installs the requisite homebrew packages. You can call it directly or via `make`
+`scripts/init` installs the requisite homebrew packages. You can call it directly or via `make`
 
 ```
-bash scripts/init.bash
+./scripts/init
 
 # or
 
@@ -21,15 +21,15 @@ MacOS has a command called `ac`, but the command line version of AppleCommander 
 There is no `make` command as it should only be run on MacOS systems.
 
 ```
-bash scripts/rename-ac.bash
+./scripts/rename-ac
 ```
 
 ## Uninstall
 
-`scripts/uninstall.bash` uninstalls the homebrew packages (and deletes the renamed symlink if it exists). You can call it directly or via `make`
+`scripts/uninstall` uninstalls the homebrew packages (and deletes the renamed symlink if it exists). You can call it directly or via `make`
 
 ```
-bash scripts/uninstall.bash
+./scripts/uninstall
 
 # or
 

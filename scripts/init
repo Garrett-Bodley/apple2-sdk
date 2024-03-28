@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 brew tap lifepillar/appleii
 brew install c2t
 brew install cc65

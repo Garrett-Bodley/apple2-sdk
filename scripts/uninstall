@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 brew uninstall c2t
 brew uninstall cc65
 brew uninstall applecommander
