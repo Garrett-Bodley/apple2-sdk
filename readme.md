@@ -4,14 +4,14 @@ This should help you get set up for developing on the Apple ][
 
 ## Installation
 
-`scripts/init` installs the requisite homebrew packages. You can call it directly or via `make`
+`scripts/install` installs the requisite homebrew packages. You can call it directly or via `make`
 
 ```
-./scripts/init
+./scripts/install
 
 # or
 
-make init
+make install
 ```
 
 **For MacOS only**
