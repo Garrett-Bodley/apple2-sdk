@@ -17,3 +17,25 @@ MacOS has a command called `ac`, but the command line version of AppleCommander 
 ```
 bash scripts/rename-ac.bash
 ```
+
+## Make Commands
+
+```
+# Stub out project directories
+make dir
+
+# Compile to 6502
+make target
+
+# Generate wav file
+make wav
+
+# Generate aif file
+make aif
+
+# Generate dsk file
+make disk
+
+# Do all of the above
+make all
+```
