@@ -9,6 +9,7 @@ fi
 
 if ! test -f "$AC_PATH"; then
   echo "error: $AC_PATH is not a file"
+  exit 1
 fi
 
 mv -v "$AC_PATH" "$(brew --prefix)/bin/aplc"
